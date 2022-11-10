@@ -6,6 +6,9 @@ install:
 brain-games:
 	poetry run brain-games
 
+brain-even:
+	poetry run brain-even
+
 lint:
 	poetry run flake8 brain_games
 
@@ -18,4 +21,4 @@ publish:
 package-install:
 	python3 -m pip install dist/*.whl
 
-.PHONY: install brain-games build publish package-install	lint
+.PHONY: install brain-games even-games build publish package-install lint
