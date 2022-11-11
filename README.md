@@ -3,4 +3,7 @@
 ### Maintainability
 [![Maintainability](https://api.codeclimate.com/v1/badges/12cbe4333a83657869fb/maintainability)](https://codeclimate.com/github/andre353/python-project-49/maintainability)
 ### asciinema
+### brain-even
 [![asciicast](https://asciinema.org/a/536594.svg)](https://asciinema.org/a/536594)
+### brain-calc
+[![asciicast](https://asciinema.org/a/AHLpki1ER7BV7bW4nDarasmDO.svg)](https://asciinema.org/a/AHLpki1ER7BV7bW4nDarasmDO)
