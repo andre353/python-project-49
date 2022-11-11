@@ -1,5 +1,6 @@
 from brain_games.games.check_user import check_user
 
+
 def output_result(game):
     round = 0
     win_count = 0

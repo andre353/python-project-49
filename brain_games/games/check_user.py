@@ -1,5 +1,6 @@
 import prompt
 import random
+import math
 
 
 def generate_rand_num():
@@ -20,12 +21,12 @@ def generate_num_expression():
     return result
 
 
-def check_answer(right_result, user_answer):
-    if (user_answer == right_result):
+def check_answer(right_res, user_ans):
+    if (user_ans == right_res):
         print("Correct!")
         return True
     else:
-        print(f"{user_answer} is wrong answer ;(. Correct answer was {right_result}.")
+        print(f"{user_ans} is wrong answer ;(. Correct answer was {right_res}.")
         return False
 
 
@@ -42,7 +43,12 @@ def check_user(game):
     if (game == 'brain_calc'):
         result = generate_num_expression()
         num_expression, right_answer = result['str'], result['calculated_num']
+    if (game == 'brain_gcd'):
+        first_num = generate_rand_num()
+        second_num = generate_rand_num()
+        num_expression = f'{first_num} {second_num}'
+        right_answer = str(math.gcd(first_num, second_num))
     print(f'Question: {num_expression}')
-    user_answer = prompt.string('Your answer? ').lower()   
+    user_answer = prompt.string('Your answer? ').lower()
     answer = check_answer(right_answer, user_answer)
     return answer

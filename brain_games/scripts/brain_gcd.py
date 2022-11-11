@@ -3,7 +3,7 @@ from brain_games.games.start_game import start_game
 
 
 def main():
-    game_name = 'brain_even'
+    game_name = 'brain_gcd'
     print(start_game(game_name))
 
 
