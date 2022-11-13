@@ -1,11 +1,10 @@
 import random
-from brain_games.games.generate_rand_num import generate_rand_num
 
 
-def generate_progression():
+def gen_prog():
     gen_list = []
-    num = generate_rand_num()
-    step = random.randint(0, 10)
+    num = random.randint(0, 100)
+    step = random.randint(1, 10)
     length = random.randint(5, 10)
     for _ in range(length):
         gen_list.append(num)

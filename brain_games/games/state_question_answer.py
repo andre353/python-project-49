@@ -1,30 +1,21 @@
-import math
-from brain_games.games.generate_rand_num import generate_rand_num
-from brain_games.games.generate_num_expression import generate_num_expression
-from brain_games.games.generate_progression import generate_progression
-from brain_games.games.check_if_prime import check_if_prime
+from brain_games.games.game_progression.gen_prog import gen_prog
+from brain_games.games.game_calc.gen_num_exp import gen_num_exp
+from brain_games.games.game_even.brain_even_qa import brain_even_qa
+from brain_games.games.game_gcd.brain_gcd_qa import brain_gcd_qa
+from brain_games.games.game_prime.brain_prime_qa import brain_prime_qa
 
 
 def state_question_answer(game):
     right_answer = ''
     num_expression = ''
     if (game == 'brain_even'):
-        num_expression = str(generate_rand_num())
-        if (int(num_expression) % 2 == 0):
-            right_answer = 'yes'
-        else:
-            right_answer = 'no'
+        num_expression, right_answer = brain_even_qa()
     elif (game == 'brain_calc'):
-        num_expression, right_answer = generate_num_expression()
+        num_expression, right_answer = gen_num_exp()
     elif (game == 'brain_gcd'):
-        first_num = generate_rand_num()
-        second_num = generate_rand_num()
-        num_expression = f'{first_num} {second_num}'
-        right_answer = str(math.gcd(first_num, second_num))
+        num_expression, right_answer = brain_gcd_qa()
     elif (game == 'brain_progression'):
-        num_expression, right_answer = generate_progression()
+        num_expression, right_answer = gen_prog()
     elif (game == 'brain_prime'):
-        prep_num = generate_rand_num()
-        right_answer = check_if_prime(prep_num)
-        num_expression = str(prep_num)
+        num_expression, right_answer = brain_prime_qa()
     return num_expression, right_answer
