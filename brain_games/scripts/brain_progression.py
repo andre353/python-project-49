@@ -3,6 +3,7 @@ from brain_games.start_game import start_game
 
 
 def main():
+    # An entry point to launch brain_progression game in the terminal
     game_name = 'brain_progression'
     print(start_game(game_name))
 

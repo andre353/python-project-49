@@ -3,6 +3,7 @@ from brain_games.cli import welcome_user
 
 
 def main():
+    # An entry point to launch brain_games welcome in the terminal
     welcome_user()
 
 
