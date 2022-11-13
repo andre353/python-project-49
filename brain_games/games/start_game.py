@@ -11,6 +11,8 @@ def start_game(game):
         task = 'What is the result of the expression?'
     if (game == 'brain_gcd'):
         task = 'Find the greatest common divisor of given numbers.'
+    if (game == 'brain_progression'):
+        task = 'What number is missing in the progression?'
     print(task)
     if (output_result(game)):
         return (f'Congratulations, {name}')
