@@ -26,13 +26,13 @@
 ---
 ### [Python 3.8.0 +](https://www.python.org/downloads/)
 ### [Pip 20.02.2 +](https://pip.pypa.io/en/stable/cli/pip_install/)
-    `python3 -m pip --version`
+    python3 -m pip --version
 ### [Poetry](https://python-poetry.org/docs/)
-    `poetry`
-    `poetry config virtualenvs.in-project true`
+    poetry
+    poetry config virtualenvs.in-project true
 ### Clone Package
-    `git@github.com:andre353/python-project-49.git`
+    git@github.com:andre353/python-project-49.git
 ### Settings
-    `cd python-project-49/`
-    `make build`
-    `make package-install`
+    cd python-project-49/
+    make build
+    make package-install
