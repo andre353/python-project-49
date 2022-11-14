@@ -7,19 +7,19 @@
 ## Description
 ---
 **Brain Games** is a serie of simple terminal games. The player is asked 3 questions in a row. He or she is to answer each question right in order to win. Here is a list of all brain games with a video description linked to each one:
-- [Brain Even](https://asciinema.org/a/536594) A number is provided. Define if it is even. To run the game:
+- [Brain Even](https://asciinema.org/a/TfYbUnDXFH7O5YdmQsdXfX91H.js) A number is provided. Define if it is even. To run the game:
     `brain-even`
 
-- [Brain Calc](https://asciinema.org/a/AHLpki1ER7BV7bW4nDarasmDO) Calculate the two provided numbers. To run the game:
+- [Brain Calc](https://asciinema.org/a/ApGBUaYrqsoH1G4P53njvEeI9) Calculate the two provided numbers. To run the game:
     `brain-calc`
 
-- [Brain Gcd](https://asciinema.org/a/IJijVkmGzzjqBXN1jeOe8SgVM) Two numbers are provided. Define the largest common divisor. To run the game:
+- [Brain Gcd](https://asciinema.org/a/dtfn0NcJUFoa5fP6n6A2hOadQ) Two numbers are provided. Define the largest common divisor. To run the game:
     `brain-gcd`
 
-- [Brain Progression](https://asciinema.org/a/03XxsX5kRSb9qe0p8szq6nqYS) A 5-10 numbers progression is provided. Define the missing element. To run the game:
+- [Brain Progression](https://asciinema.org/a/FgPZJNBoMzI6a95jwkPd93zfR) A 5-10 numbers progression is provided. Define the missing element. To run the game:
     `brain-progression`
 
-- [Brain Prime](https://asciinema.org/a/lnMCobhonfYPdPE3eUyXAd6Jw) A number is provided. Define if it is prime. To run the game:
+- [Brain Prime](https://asciinema.org/a/i3TiceMavJrVGlAK3yEzQ4Q1C) A number is provided. Define if it is prime. To run the game:
     `brain-prime`
 
 ## Installation
