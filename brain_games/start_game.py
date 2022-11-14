@@ -8,6 +8,6 @@ def start_game(game):
     task = state_task(game)
     print(task)
     if (output_result(game)):
-        return (f'Congratulations, {name}')
+        return (f'Congratulations, {name}!')
     else:
         return (f'Let\'s try again, {name}!')
