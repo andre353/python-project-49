@@ -9,6 +9,6 @@ def win_count(game):
         if (answer):
             win_count += 1
         else:
-            win_count -= 1
+            break
         round += 1
     return win_count
