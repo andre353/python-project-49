@@ -4,10 +4,12 @@
 [![Actions Status](https://github.com/andre353/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/andre353/python-project-49/actions)
 ### Maintainability as per Codeclimate service:
 [![Maintainability](https://api.codeclimate.com/v1/badges/12cbe4333a83657869fb/maintainability)](https://codeclimate.com/github/andre353/python-project-49/maintainability)
+### Program local set up:
+[![asciicast](https://asciinema.org/a/pmEDKdiil5WWln6X3t6vETbAU.svg)](https://asciinema.org/a/pmEDKdiil5WWln6X3t6vETbAU)
 ## Description
 ---
 **Brain Games** is a serie of simple terminal games. The player is asked 3 questions in a row. He or she is to answer each question right in order to win. Here is a list of all brain games with a video description linked to each one:
-- [Brain Even](https://asciinema.org/a/TfYbUnDXFH7O5YdmQsdXfX91H.js) A number is provided. Define if it is even. To run the game:
+- [Brain Even](https://asciinema.org/a/XKvIFNpNYHZRpTf9UB2uoP3Ai) A number is provided. Define if it is even. To run the game:
     `brain-even`
 
 - [Brain Calc](https://asciinema.org/a/ApGBUaYrqsoH1G4P53njvEeI9) Calculate the two provided numbers. To run the game:
