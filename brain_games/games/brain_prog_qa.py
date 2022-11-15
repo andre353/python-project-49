@@ -1,7 +1,7 @@
 import random
 
 
-def gen_prog():
+def brain_prog_qa():
     gen_list = []
     num = random.randint(0, 100)
     step = random.randint(1, 10)

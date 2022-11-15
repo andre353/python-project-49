@@ -2,7 +2,7 @@ import random
 from brain_games.games.generate_rand_num import generate_rand_num
 
 
-def gen_num_exp():
+def brain_calc_qa():
     first_num = generate_rand_num()
     second_num = generate_rand_num()
     list = ['+', '-', '*']
