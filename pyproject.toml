@@ -5,6 +5,10 @@ description = "Brain Games is a 5 simple terminal serie of games."
 authors = ["Elena"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
+classifiers = [
+    "Topic :: Games/Entertainment",
+    "Development Status :: 3 - Alpha",
+]
 repository = "https://github.com/andre353/python-project-49"
 
 [tool.poetry.dependencies]

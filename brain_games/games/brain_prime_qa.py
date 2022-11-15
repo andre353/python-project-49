@@ -1,5 +1,6 @@
 from brain_games.games.generate_rand_num import generate_rand_num
 
+
 def check_if_prime(num):
     if (num < 1):
         return
@@ -11,6 +12,7 @@ def check_if_prime(num):
     if (k <= 0):
         right_answer = 'yes'
     return right_answer
+
 
 def brain_prime_qa():
     prep_num = generate_rand_num(1, 100)
