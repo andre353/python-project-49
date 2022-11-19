@@ -27,7 +27,7 @@ def state_task(game):
         task = 'What is the result of the expression?'
     elif (game == 'brain_gcd'):
         task = 'Find the greatest common divisor of given numbers.'
-    elif (game == 'brain_progression'):
+    elif (game == 'brain_prog'):
         task = 'What number is missing in the progression?'
     elif (game == 'brain_prime'):
         task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
