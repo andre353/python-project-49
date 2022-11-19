@@ -1,4 +1,4 @@
-from brain_games.games.generate_rand_num import generate_rand_num
+from brain_games.start_game import generate_rand_num
 
 
 def check_if_prime(num):
@@ -14,8 +14,9 @@ def check_if_prime(num):
     return right_answer
 
 
-def brain_prime_qa():
+def prime():
+    game_name = 'brain_prime'
     prep_num = generate_rand_num(1, 100)
     right_answer = check_if_prime(prep_num)
     num_expression = str(prep_num)
-    return num_expression, right_answer
+    return (num_expression, right_answer), game_name

@@ -1,13 +1,13 @@
 import random
-from brain_games.games.generate_rand_num import generate_rand_num
+from brain_games.start_game import generate_rand_num
 
 
-def brain_calc_qa():
+def calc():
+    game_name = 'brain_calc'
     first_num = generate_rand_num()
     second_num = generate_rand_num()
     list = ['+', '-', '*']
     operator = random.choice(list)
     string = f'{first_num} {operator} {second_num}'
-    expr = string
-    calculated_num = eval(expr)
-    return string, str(calculated_num)
+    calculated_num = str(eval(string))
+    return (string, calculated_num), game_name
