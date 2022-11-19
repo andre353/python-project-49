@@ -33,4 +33,4 @@ publish:
 package-install:
 	python3 -m pip install dist/*.whl
 
-.PHONY: install brain-games even-games build publish package-install lint
+.PHONY: install brain-games brain-even brain-calc brain-gcd brain-progression brain-prime build publish package-install lint
