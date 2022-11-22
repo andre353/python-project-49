@@ -16,8 +16,8 @@ def start_game(game):
     print(GREETING_PHRASE)
     name = prompt.string(GREETING_QUESTION)
     print(
-          f"{GREETING}, {name}!\n"
-          f"{game.TASK}"
+        f"{GREETING}, {name}!\n"
+        f"{game.TASK}"
     )
     win_count = 0
     while True:
