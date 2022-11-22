@@ -33,7 +33,6 @@ def start_game(game):
         else:
             print(f"{u_anw} is wrong answer ;(. Correct answer was {solution}.")
             break
- 
     if win_count == ROUNDS_TOTAL - 1:
         print(f'Congratulations, {name}!')
     else:
