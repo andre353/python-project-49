@@ -20,11 +20,10 @@ def welcome_user():
 
 
 def start_game(game):
-    round = 0
-    win_count = 0
+    win_count = -1
     name = welcome_user()
     print(game.TASK)
-    while round < ROUNDS_TOTAL:
+    while win_count < ROUNDS_TOTAL - 1:
         num_expression, solution = game.module_func()
         print(f'Question: {num_expression}')
         u_anw = prompt.string('Your answer? ')
@@ -34,9 +33,8 @@ def start_game(game):
         else:
             print(f"{u_anw} is wrong answer ;(. Correct answer was {solution}.")
             break
-        round += 1
-
-    if win_count == ROUNDS_TOTAL:
+ 
+    if win_count == ROUNDS_TOTAL - 1:
         print(f'Congratulations, {name}!')
     else:
         print(f'Let\'s try again, {name}!')
