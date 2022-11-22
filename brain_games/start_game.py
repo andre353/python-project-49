@@ -20,7 +20,7 @@ def start_game(game):
         f"{game.TASK}"
     )
     win_count = 0
-    while True:
+    while win_count < ROUNDS_TOTAL:
         num_expression, solution = game.module_func()
         print(f'Question: {num_expression}')
         u_anw = prompt.string('Your answer? ')
@@ -33,6 +33,6 @@ def start_game(game):
                 f"Let\'s try again, {name}!"
             )
             break
-        if win_count == ROUNDS_TOTAL:
-            print(f'Congratulations, {name}!')
-            break
+    if win_count == ROUNDS_TOTAL:
+        print(f'Congratulations, {name}!')
+            
