@@ -15,10 +15,7 @@ def generate_rand_num(a=0, b=100):
 def start_game(game):
     print(GREETING_PHRASE)
     name = prompt.string(GREETING_QUESTION)
-    print(
-        f"{GREETING}, {name}!\n"
-        f"{game.TASK}"
-    )
+    print(f"{GREETING}, {name}!\n{game.TASK}")
     win_count = 0
     while win_count < ROUNDS_TOTAL:
         num_expression, solution = game.module_func()
@@ -28,11 +25,9 @@ def start_game(game):
             print("Correct!")
             win_count += 1
         else:
-            print(
-                f"{u_anw} is wrong answer ;(. Correct answer was {solution}.\n"
-                f"Let\'s try again, {name}!"
-            )
+            print(f"{u_anw} is wrong answer ;(. Correct answer was {solution}.")
             break
     if win_count == ROUNDS_TOTAL:
         print(f'Congratulations, {name}!')
-            
+    else:
+      print(f"Let\'s try again, {name}!")    
