@@ -12,15 +12,18 @@ def generate_rand_num(a=0, b=100):
     return random.randint(a, b)
 
 
-def start_game(game):
+def welcome_user():
     print(GREETING_PHRASE)
     name = prompt.string(GREETING_QUESTION)
     print(f'{GREETING}, {name}!')
+    return name
 
-    print(game.TASK)
 
+def start_game(game):
     round = 0
     win_count = 0
+    name = welcome_user()
+    print(game.TASK)
     while round < ROUNDS_TOTAL:
         num_expression, solution = game.module_func()
         print(f'Question: {num_expression}')
