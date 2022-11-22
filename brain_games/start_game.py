@@ -17,13 +17,12 @@ def start_game(game):
     name = prompt.string(GREETING_QUESTION)
     print(f'{GREETING}, {name}!')
 
-    task = game()[1]
-    print(task)
+    print(game.TASK)
 
     round = 0
     win_count = 0
     while round < ROUNDS_TOTAL:
-        num_expression, solution = game()[0]
+        num_expression, solution = game.module_func()
         print(f'Question: {num_expression}')
         u_anw = prompt.string('Your answer? ')
         if (u_anw == solution):

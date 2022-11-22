@@ -1,8 +1,10 @@
 from brain_games.start_game import generate_rand_num
 
 
-def even():
-    task = 'Answer "yes" if the number is even, otherwise answer "no".'
+TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def module_func():
     solution = ''
     num_expression = ''
     num_expression = str(generate_rand_num(1, 100))
@@ -10,4 +12,4 @@ def even():
         solution = 'yes'
     else:
         solution = 'no'
-    return (num_expression, solution), task
+    return num_expression, solution
