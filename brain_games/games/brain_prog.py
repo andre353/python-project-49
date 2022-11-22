@@ -3,7 +3,7 @@ from brain_games.start_game import generate_rand_num
 
 
 def prog():
-    game_name = 'brain_prog'
+    task = 'What number is missing in the progression?'
     gen_list = []
     num = generate_rand_num()
     step = generate_rand_num(1, 10)
@@ -12,6 +12,6 @@ def prog():
         gen_list.append(num)
         num += step
     rand_index = random.randint(0, length - 1)
-    hidden_num = str(gen_list[rand_index])
-    list_to_str = ' '.join(str(i).replace(hidden_num, '..') for i in gen_list)
-    return (list_to_str, hidden_num), game_name
+    solution = str(gen_list[rand_index])
+    num_expression = ' '.join(str(i).replace(solution, '..') for i in gen_list)
+    return (num_expression, solution), task

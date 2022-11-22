@@ -15,8 +15,8 @@ def check_if_prime(num):
 
 
 def prime():
-    game_name = 'brain_prime'
+    task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     prep_num = generate_rand_num(1, 100)
-    right_answer = check_if_prime(prep_num)
+    solution = check_if_prime(prep_num)
     num_expression = str(prep_num)
-    return (num_expression, right_answer), game_name
+    return (num_expression, solution), task
