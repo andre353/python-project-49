@@ -1,4 +1,4 @@
-from brain_games.start_game import generate_rand_num
+import random
 
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -17,9 +17,8 @@ def is_prime(num):
     return right_answer
 
 
-def module_func():
-    answers = ["no", "yes"]
-    prep_num = generate_rand_num(1, 100)
-    solution = answers[is_prime(prep_num)]
-    num_expression = str(prep_num)
-    return num_expression, solution
+def get_expression_and_solution():
+    prep_num = random.randint(1, 100)
+    solution = 'yes' if is_prime(prep_num) else 'no'
+    expression = str(prep_num)
+    return expression, solution

@@ -1,13 +1,13 @@
+import random
 import math
-from brain_games.start_game import generate_rand_num
 
 
 TASK = 'Find the greatest common divisor of given numbers.'
 
 
-def module_func():
-    first_num = generate_rand_num(1, 100)
-    second_num = generate_rand_num(1, 100)
-    num_expression = f'{first_num} {second_num}'
+def get_expression_and_solution():
+    first_num = random.randint(1, 100)
+    second_num = random.randint(1, 100)
+    expression = f'{first_num} {second_num}'
     solution = str(math.gcd(first_num, second_num))
-    return num_expression, solution
+    return expression, solution
